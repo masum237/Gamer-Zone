@@ -4,6 +4,7 @@
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
+/* nav section */
 .nav-container {
   display: flex;
   padding: 30px 150px;
@@ -64,6 +65,7 @@
   height: 24px;
   cursor: pointer;
 }
+/* banner section */
 .banner-container {
   width: 100%;
   display: flex;
@@ -134,6 +136,100 @@
   margin-left: 20px;
   margin-top: 20px;
 }
+/* online games section */
+.on-game-top h1 {
+  color: #0b0223;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.online-game-title {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: 700;
+}
+.on-game-top p {
+  color: #534c64;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* Card Section */
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.game-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-image-text {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 283px;
+  background: rgba(0, 0, 0, 0.664);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  border: 5px solid #ff42a5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.centered-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 10px;
+}
+.card:hover .hover-content {
+  opacity: 1;
+}
+
+/* 
+.
+.
+.
+.
+.
+.
+.
+.
+. */
 @media screen and (max-width: 576px) {
   .nav-container,
   .banner-container,
@@ -167,6 +263,25 @@
   }
   .banner-img img {
     width: 100%;
+  }
+  /* card section */
+  .card-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 20px;
+  }
+  .on-game-top h1 {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .online-game-title {
+    font-size: 30px;
+  }
+  .on-game-top p {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -226,5 +341,25 @@
   .btn2 {
     font-size: 16px;
     margin: 0;
+  }
+  .centered-text {
+    font-size: 15px;
+  }
+  .play-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .on-game-top h1 {
+    padding-bottom: 10px;
+  }
+  .on-game-top p {
+    padding-bottom: 10px;
+  }
+  .card-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 20px;
   }
 }
