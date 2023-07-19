@@ -134,7 +134,7 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-@media screen and (min-width: 425px) and (max-width: 576px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .nav-container,
   .banner-container,
   .nav-menus {
